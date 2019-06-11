@@ -5,21 +5,27 @@
 // };
 // myFunction();
 
-// let anotherFunction = function (param) {
-//   return param;
-// };
-// anotherFunction("Example");
+
+let anotherFunction = function (param) {
+  return param;
+};
+anotherFunction("Example");
+
+anotherFunction.map (param => {return myFunction.length});
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
 
+add.map ((param1,param2)=>{return 1 + 2});
+
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
 
+subtract.map ((param1,param2)=> {return 1-2});
 
 // Stretch
 
@@ -28,3 +34,7 @@
 //   return num * 3;
 // });
 // console.log(triple);
+
+exampleArray = [1,2,3,4];
+const triple = exampleArray.map (num => {return num *3} )
+
